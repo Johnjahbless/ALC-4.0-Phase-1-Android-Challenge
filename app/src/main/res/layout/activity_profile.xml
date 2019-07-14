@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:elevation="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_arrow_back"
+    android:padding="16dp"/>
+        <ImageView
+            android:elevation="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:padding="16dp"/>
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFF"
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-130dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sass" />
+
+        <RelativeLayout
+            android:layout_marginBottom="16dp"
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image">
+
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:textAlignment="center"
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56dp"
+                android:text="John kolo"
+                android:textColor="#000"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <view
+            android:layout_below="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:id="@+id/track"
+                    android:textColor="#403333"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track: Android"/>
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#403333"
+                    android:text="Country: Nigeria"
+                    android:textSize="20sp"/>
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#403333"
+                android:text="Email: juneapps12@gmail.com"
+                android:textSize="20sp"/>
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#403333"
+                android:text="Phone: 07039001367"
+                android:textSize="20sp"/>
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/slack_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#403333"
+                android:text="Slack: @John"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
